@@ -1,0 +1,21 @@
+шаблон  компании
+1. id
+//державні реєстрації
+2. st-ident01-name //наприклад ЕДРПО
+3. st-ident01-val
+2. st-ident02-name //наприклад ПЕНС ФОНД
+3. st-ident02-val
+2. st-ident03-name
+3. st-ident03-val
+2. st-ident04-name
+3. st-ident04-val
+2. st-ident05-name
+3. st-ident05-val
+2. st-ident06-name
+3. st-ident06-val
+2. st-ident07-name
+3. st-ident07-val
+2. st-ident08-name
+3. st-ident08-val
+2. st-ident09-name
+3. st-ident09-val

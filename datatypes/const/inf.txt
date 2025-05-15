@@ -1,0 +1,33 @@
+Константа - засіб роботи з постійними (або умовно постійними)
+значеннями. У константах зберігається інформація, яка не змінюється або
+змінюється досить рідко. Наприклад, назва організації, поштова адреса.
+Константи зберігаются у таблиці const, яка складається з чотирьох стовпців:
+	
+1. id	INTEGER PRIMARY KEY NOT NULL AUTOINCREMENT
+2. name TEXT UNIQUE
+2. type TEXT 
+3. val	TEXT
+4. note TEXT
+
+CREATE TABLE IF NOT EXISTS skup_const (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name TEXT UNIQUE, type TEXT, val TEXT, note TEXT, CHECK (type = 'INT' OR type = 'FLOAT' OR type = 'DATATIME' OR type = 'TXT'));
+
+enum Skup_tуpes
+{
+	SKUP_INT, // присваивается 0
+	SKUP_FLOAT,  // присваивается 1
+	SKUP_DATATIME  // присваивается 2
+	SKUP_TXT // присваивается 3
+};
+
+
+class skup_const {
+internal:
+	
+external:
+	int id;
+	char* name; 
+	Skup_types type;
+	char* val;
+	char* note;
+
+}
